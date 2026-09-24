@@ -1,5 +1,7 @@
+require('dotenv').config();
+
 const express = require("express");
-const { testConnection } = require("./db/sequelize");
+const db = require("./db/sequelize");
 
 const app = express();
 
@@ -18,5 +20,6 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, async () => {
   console.log(`Server listening on port ${PORT}`);
-  await testConnection();
+  await db.testConnection();
 });
+
