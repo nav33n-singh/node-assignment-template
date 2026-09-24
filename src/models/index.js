@@ -1,3 +1,9 @@
-// TODO: define your data model here
+const AuctionModel = require('./AuctionModel');
+const BidModel = require('./BidModel');
+const IdempotencyKeyModel = require('./IdempotencyKeyModel');
 
-module.exports = {};
+module.exports = {
+    AuctionModel,
+    BidModel,
+    IdempotencyKeyModel
+};

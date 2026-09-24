@@ -1,6 +1,6 @@
 const { DataTypes, Model } = require('sequelize');
-const { sequelize } = require('../db');
-const Auction = require('./auction');
+const { sequelize } = require('../db/sequelize');
+const Auction = require('./AuctionModel');
 
 class IdempotencyKey extends Model {}
 
